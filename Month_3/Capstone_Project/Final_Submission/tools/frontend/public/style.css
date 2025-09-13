@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    color: white !important;
+}
+.background-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0; /* still behind content but above spline */
+    backdrop-filter: blur(0px);
+    background-color: rgba(0, 0, 0, 0.4); /* darken slightly */
+    pointer-events: none;
+  }
+  
+h3{
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 10px;
+    color: antiquewhite;
+}
+.details{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: justify;
+}

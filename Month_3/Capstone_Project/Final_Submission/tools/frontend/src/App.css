@@ -1,0 +1,146 @@
+html,
+body {
+  height:50%;
+  color: white;
+}
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.woff')format('woff2'),
+       url('./fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Semibold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Light.woff2') format('woff2'),
+       url('./fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('./fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('./fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('./fonts/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PANCHANG';
+  src: url('./Panchang_Complete/Fonts/WEB/fonts/Panchang-Medium.woff2') format('woff2'),
+       url('./Panchang_Complete/Fonts/WEB/fonts/Panchang-Medium.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+
+}
+.NORMAL-TEXT{
+  font-family:'PANCHANG';
+  font-size: 18PX;
+
+  
+}
+.light-text {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 300;
+}
+.semi-bold{
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+}
+.regular-text {
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 400;
+}
+
+
+body {
+  margin: 1%;
+  background-color: #292929;
+  color: #ffffff;
+  font-family: 'ClashDisplay', sans-serif;
+  font-weight: 'regular';
+  font-size: 20px;
+}
+h1,h2,h3{
+
+  color: white;
+  font-family: 'PANCHANG';
+  font-weight: 400;
+}
+/* Black and Purple Navbar Style */
+.navbar-custom {
+  background-color: rgba(18, 18, 18, 0.85); /* Semi-transparent black */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center; /* Centers the links horizontally */
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  box-shadow: 0 0 12px rgba(162, 89, 255, 0.25);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(162, 89, 255, 0.2);
+}
+.navbar-custom {
+  background-color: rgba(255, 255, 255, 0.2); /* Light transparent white */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px; /* ⬅️ Rounded corners */
+  
+  /* If you want both left and right sides rounded: */
+  border-radius: 2rem 2rem;
+  width: fit-content;         /* Makes the nav hug its content */
+  margin: 1rem auto;       
+}
+
+/* White text links with subtle purple hover */
+.navbar-custom a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-custom a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #a259ff; /* Soft purple underline */
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-custom a:hover::after {
+  width: 100%;
+}
+
+.navbar-custom a:hover {
+  color: #a259ff;
+}

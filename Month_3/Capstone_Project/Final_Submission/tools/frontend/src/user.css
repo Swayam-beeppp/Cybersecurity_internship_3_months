@@ -1,0 +1,30 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+}
+
+th {
+    background-color: #0fa5ea;
+    color: white;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+
+}
+
+tbody tr:hover {
+   
+}
+h1,h2,h3{
+    color: white;
+}

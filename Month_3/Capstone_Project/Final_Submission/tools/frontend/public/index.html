@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="/avatar.png"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Face Login</title>
+
+    <!-- Latest Spline viewer -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.56/build/spline-viewer.js"></script>
+
+    <style>
+      .background-spline {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        pointer-events: none; /* prevents blocking clicks */
+        background-color: #000;
+      }
+      spline-viewer {
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+      }
+    </style>
+
+    <script defer="defer" src="/static/js/main.cb3123ce.js"></script>
+    <link href="/static/css/main.d67894c8.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- ✅ Only ONE spline viewer (background) -->
+    <div class="background-spline">
+      <spline-viewer url="https://prod.spline.design/PzoziaSq-6dHsQ4C/scene.splinecode"></spline-viewer>
+    </div>
+
+    <div id="root" class="container">
+      <h1>Facial Biometrics</h1>
+    </div>
+  </body>
+</html>

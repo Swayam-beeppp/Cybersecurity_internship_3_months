@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Camera Access</title>
+</head>
+<body>
+  <h2>Face Recognition</h2>
+  <video id="video" width="320" height="240" autoplay></video>
+  <br>
+  <button onclick="capture()">Login</button>
+  <button onclick="capture(true)">Register</button>
+  <input type="text" id="nameInput" placeholder="Enter name for registration" />
+  <p id="response"></p>
+
+  <script>
+    const video = document.getElementById('video');
+
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(stream => { video.srcObject = stream; })
+      .catch(err => console.error("Camera error: ", err));
+
+    function capture(register = false) {
+      const canvas = document.createElement('canvas');
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      canvas.getContext('2d').drawImage(video, 0, 0);
+
+      const data = {
+        image: canvas.toDataURL("image/jpeg"),
+      };
+      if (register) {
+        const name = document.getElementById('nameInput').value;
+        if (!name) return alert("Enter a name to register");
+        data.name = name;
+      }
+
+      fetch('/upload', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(res => res.json())
+      .then(data => document.getElementById('response').innerText = data.message)
+      .catch(err => console.error(err));
+    }
+  </script>
+</body>
+</html>

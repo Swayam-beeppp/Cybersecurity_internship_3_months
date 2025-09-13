@@ -1,0 +1,51 @@
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2, h3, h4 {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+  
+  th, td {
+    padding: 8px 12px;
+    text-align: left;
+  }
+  
+  button {
+    margin-right: 8px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #cbc80b;
+    color: rgb(13, 5, 5);
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #8e570f;
+  }
+  
+  input {
+    margin: 5px;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+  }
+  
+  form {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
